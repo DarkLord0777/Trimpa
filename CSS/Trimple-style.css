@@ -1,0 +1,390 @@
+*:root{
+    --main-txt-color: #7C8DB0;
+    --title-txt-color: #6E7491;
+    --hover-color: #605DEC;
+}
+*,
+*::after,
+*::before{
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    font-family: Nunito sans;
+    overflow-x: hidden;
+}
+p, h1, h2, h3, h4{
+    margin: 0;
+}
+ul, ol{
+    padding-left: 0;
+    margin: 0;
+}
+a{
+    display: inline-block;
+}
+button{
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: currentColor;
+}
+.list{
+    list-style-type: none;
+}
+.container{
+    width: 1440px;
+    padding-left: 64px;
+    padding-right: 64px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+/*-----------------------HEADER-----------------------*/
+.header{
+    width: 1440px;
+    padding-left: 24px;
+    padding-right: 40px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 96px;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+    margin-right: 16px;
+} 
+.nav-list-item{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.nav-item-link{
+    color: var(--main-txt-color);
+    text-align: center;
+    font-size: 16px;
+    line-height: normal;
+}
+.nav-item-link:hover,
+.nav-item-link:focus{
+    color: var(--hover-color);
+}
+.current-color{
+    color: var(--hover-color);
+}
+.position{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.header-btn{
+    display: flex;
+    height: 48px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background-color: #605DEC;
+    border: transparent;
+    color: #FAFAFA;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    line-height: normal;
+}
+.header-btn:hover{
+    background-color:rgb(58, 55, 230);
+}
+/*-----------------------HERO-----------------------*/
+.Hero{
+    padding-top: 127px;
+    padding-bottom: 245px;
+}
+.hero-title{
+    max-width: 750px;
+    text-align: center;
+    background-image: linear-gradient(90deg, rgba(74,91,236,1) 0%, rgba(136,0,238,1) 31%, rgba(110,37,235,1) 87%);
+    color: transparent;
+    background-clip: text;
+    font-family: Nunito Sans;
+    font-size: 97px;
+    line-height: 1.0;
+    margin: 0 auto;
+    font-weight: 900;
+    user-select: none;
+    margin-bottom: 64px;
+}
+.hero-list{
+    display: flex;
+    padding-left: 56px;
+    padding-right: 56px
+}
+.hero-list-item{
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 0 0 2px 1px #7C8DB0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 8px 13px;
+    width: 100%;
+}
+.hero-list-item:first-child{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.hero-item-txt{
+    color: var(--main-txt-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+}
+.hero-btn{
+    color: #FAFAFA;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 4px;
+    background: #605DEC;
+    border-color: transparent;
+    padding: 12px 20px;
+    margin-left: auto;
+}
+.hero-btn:hover{
+    background-color:rgb(58, 55, 230);
+}
+.hero-list-item:last-child{
+    padding: 0px 0px 0px 13px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/*-----------------------CARD-----------------------*/
+.Card{
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+.card-txt{
+    color: var(--title-txt-color);
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.card-txt-special{
+    color: var(--hover-color);
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.card-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+.card-list-item{
+    width: 412px;
+}
+.card-list-item:nth-child(4){
+    width: 1312px;
+}
+.card-item-img{
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+.card-list-item:hover{
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(28, 5, 77, 0.10);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.under-card-item{
+    padding: 16px 24px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0px 12px 32px 0px rgba(0, 0, 0, 0.05), 0px 2px 4px 0px rgba(28, 5, 77, 0.10);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100;
+}
+.under-card-txt{
+    color: #6E7491;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 4px;
+}
+.under-card-city{
+    color: var(--hover-color);
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.price{
+    margin-left: auto;
+    color: var(--title-txt-color);
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.under-card-described{
+    color: var(--main-txt-color);
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+/*-----------------------CARD2-----------------------*/
+.card2{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.card2-title{
+    color: var(--title-txt-color);
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+}
+.card2-title-special{
+    background:  linear-gradient(180deg, #5CD6C0 0%, #22C3A6 100%);
+    background-clip: text;
+    color: transparent;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.under-card2-city{
+    background:  linear-gradient(180deg, #5CD6C0 0%, #22C3A6 100%);
+    background-clip: text;
+    color: transparent;
+}
+.under-card2-described{
+    color: #7C8DB0;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 362px;
+}
+/*-----------------------BTN-----------------------*/
+.btn{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.btn-btn{
+    color: #FAFAFA;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: var(--hover-color);
+    border: transparent;
+    display: block;
+    margin: 0 auto;
+}
+.btn-btn:hover{
+    background-color: rgb(58, 55, 230);
+}
+/*-----------------------PRE-FOOTER-----------------------*/
+.pre-footer{
+    padding-bottom: 42px;
+}
+.tumb{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.pre-footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 200px;
+    padding: 16px 16px 16px 0px;
+}
+ul .pre-footer-list-item:first-child a{
+    color: var(--title-txt-color);
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+ul .pre-footer-list-item:first-child a:hover{
+    color: var(--hover-color);
+}
+.pre-footer-item-link{
+    color: var(--main-txt-color);
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.pre-footer-item-link:hover{
+    color: var(--hover-color);
+}
+/*-----------------------FOOTER-----------------------*/
+.footer{
+    padding-bottom: 28px;
+    padding-top: 45px;
+    border-top: 1px solid #CBD4E6;
+}
+.footer-tumb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 56px;
+    padding-right: 56px
+}
+.footer-list{
+    display: flex;
+    padding: 8px;
+    gap: 20px;
+}
+.footer-link-svg{
+    fill: #6E7491;
+}
+.footer-item-link{
+    width: 24px;
+    height: 24px;
+}
+.footer-item-link:hover svg{
+    fill: var(--hover-color);
+}
+.footer-copyright{
+    color: var(--main-txt-color);
+    text-align: right;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    user-select: none;
+}
